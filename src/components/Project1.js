@@ -165,7 +165,7 @@ class Project1 extends React.Component {
 
                     <section>
                         <FadeInSection>
-                            <div className="go-back"><a href="/#projects">See More Projects</a></div>
+                            <div className="go-back"><a href="/">Back to Home</a></div>
                         </FadeInSection>
                     </section>
 
