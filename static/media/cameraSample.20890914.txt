@@ -1,0 +1,163 @@
+using System.Collections;
+using UnityEngine;
+
+public class CameraController : MonoBehaviour
+{
+    public Transform cameraTransform;
+
+    public float panSpeed;
+    public float panTime = 5f;
+
+    public float quickSpeed = 2f;
+    public float normalSpeed = 1f;
+
+    public float maxHeight = 150f;
+    public float minHeight = 4f;
+
+    public float rotationAmount = 3f;
+    public Vector3 zoomAmount;
+
+    public Vector3 newPosition;
+    public Quaternion newRotation;
+    public Vector3 newZoom;
+
+    public Vector3 dragStart;
+    public Vector3 dragCurrent;
+    public Vector3 rotateStart;
+    public Vector3 rotateCurrent;
+
+    private void Start()
+    {
+        newPosition = transform.position;
+        newRotation = transform.rotation;
+        newZoom = cameraTransform.localPosition;
+    }
+
+    void Update()
+    {
+        HandleMouseInput();
+        HandleKeyInput();        
+    }
+
+    void HandleMouseInput() //use the mouse for panning and zooming
+    {
+        if (Input.mouseScrollDelta.y != 0)
+        {
+            newZoom += Input.mouseScrollDelta.y * zoomAmount;
+        }
+
+
+        if (Input.GetMouseButtonDown(0)) //left mouse button click & drag
+        {
+            Plane plane = new Plane(Vector3.up, Vector3.zero);
+
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            float entry;
+
+            if (plane.Raycast(ray, out entry))
+            {
+                dragStart = ray.GetPoint(entry);
+            }
+        
+        }
+
+        if (Input.GetMouseButton(0))
+        {
+            Plane plane = new Plane(Vector3.up, Vector3.zero);
+
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            float entry;
+
+            if (plane.Raycast(ray, out entry))
+            {
+                dragCurrent = ray.GetPoint(entry);
+
+                newPosition = transform.position + dragStart - dragCurrent; 
+            }
+
+        }
+
+        if (Input.GetMouseButtonDown(1)) //right button click & drag
+        {
+            rotateStart = Input.mousePosition;
+        }
+
+        if (Input.GetMouseButton(1))
+        {
+            rotateCurrent = Input.mousePosition;
+
+            Vector3 difference = rotateStart - rotateCurrent;
+
+            rotateStart = rotateCurrent;
+
+            newRotation *= Quaternion.Euler(Vector3.up * (-difference.x / 5f));
+        }
+        
+
+    }
+
+    void HandleKeyInput() 
+    {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            panSpeed = quickSpeed;
+        }
+        else
+        {
+            panSpeed = normalSpeed;
+        }
+
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) 
+        {
+            newPosition += (transform.right * panSpeed);
+        }
+
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        {
+            newPosition += (transform.right * -panSpeed);
+        }
+
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        {
+            newPosition += (transform.forward * -panSpeed);
+        }
+
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        {
+            newPosition += (transform.forward * panSpeed);
+        }
+
+        if (Input.GetKey(KeyCode.Q))
+        {
+            newRotation *= Quaternion.Euler(Vector3.up * rotationAmount);
+            
+
+        }
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            newRotation *= Quaternion.Euler(Vector3.up * -rotationAmount);
+
+        }
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            newZoom += zoomAmount;
+
+        }
+        if (Input.GetKey(KeyCode.F))
+        {
+            newZoom -= zoomAmount;
+        }
+
+
+        //smooth out key & mouse input
+        transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * panTime);
+        transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime * panTime);
+        cameraTransform.localPosition = Vector3.Lerp(cameraTransform.localPosition, newZoom, Time.deltaTime * panTime);
+
+
+    }
+}

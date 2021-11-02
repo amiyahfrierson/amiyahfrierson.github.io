@@ -1,0 +1,152 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BaseClass
+{
+    base info
+    private string charName;
+    private int charLevel;
+
+    generate a random name 
+    public string[] names = new string[] { Aselaine, Briarheart, Cavelier, Devereaux,
+                                            Emory, Faintree, Gillain, Halcyon, Ide,
+                                            Jollane, Kieran, Lenasi, Mercier, Nesdain,
+                                            Oriel, Petras, Quincey, Romenel, Sage, Trevelyan,
+                                            Uevari, Valkyrie, Wilroth, Xanril, Yvenir, Zephale };
+    public string CharName { get; set; }
+    public int CharLevel { get; set; }
+
+
+    class name & description
+    public string ClassName { get; set; }
+    public string ClassDescription { get; set; }
+
+    class stats
+    private int wisdom;
+    private int youth;
+    private int lithe;
+    private int design;
+
+    public int Wisdom { get; set; }
+    public int Youth { get; set; }
+    public int Lithe { get; set; }
+    public int Design { get; set; }
+
+    survival stats
+    private int health;
+    private int stamina;
+    private int hunger;
+
+    public int Health { get; set; }
+    public int Stamina { get; set; }
+    public int Hunger { get; set; }
+
+
+    afflictions
+    private int isDead;
+    private int isSick;
+    private int isHungry;
+
+    public bool IsDead { get { return false; } }
+    public bool IsSick { get { return false; } }
+    public bool IsHungry { get { return false; } }
+
+    keep lists
+    public  ListBaseClass partylist = new ListBaseClass();
+
+
+}
+
+public class MageClass : BaseClass
+{
+    public MageClass()
+    {
+        CharName = names[Random.Range(0, names.Length)]; generate random name
+        CharLevel = 1;
+        ClassName = Wyldchild;
+        ClassDescription = Wyldchilds carry a magical birthright conferred upon them by an exotic bloodline,  +
+            some otherworldly influence, or exposure to unknown cosmic forces. One cannot study wyldmagic as one  +
+            learns a language. No one chooses wyldmagic, the power chooses the wyldchild.;
+
+        Wisdom = 8;
+        Youth = 2;
+        Lithe = 4;
+        Design = 6;
+
+        Health = 100;
+        Stamina = 100;
+        Hunger = 100;
+
+    }
+
+}
+
+public class WarriorClass : BaseClass
+{
+    public WarriorClass()
+    {
+        CharName = names[Random.Range(0, names.Length)]; generate random name
+        CharLevel = 1;
+        ClassName = Wyldrager;
+        ClassDescription = Ragers learn the basics of all combat styles. Every rager can swing an axe,  +
+            fence with a rapier, wield a longsword or a greatsword, use a bow, and even trap foes in a net with some degree of skill.  +
+            They are well acquainted with death and wyldrot, both meeting it out and staring it defiantly in the face.;
+
+        Wisdom = 2;
+        Youth = 8;
+        Lithe = 6;
+        Design = 4;
+
+        Health = 150;
+        Stamina = 150;
+        Hunger = 150;
+
+    }
+}
+
+public class RogueClass : BaseClass
+{
+    public RogueClass()
+    {
+        CharName = names[Random.Range(0, names.Length)]; generate random name
+        CharLevel = 1;
+        ClassName = Wyldrunner;
+        ClassDescription = Wyldrunners rely on skill, stealth, and their foes’ vulnerabilities to get the upper hand in any situation.  +
+            hey have a knack for finding the solution to just about any problem, demonstrating a resourcefulness and versatility  +
+            that is the cornerstone of any successful adventuring party.;
+
+        Wisdom = 2;
+        Youth = 6;
+        Lithe = 8;
+        Design = 4;
+
+        Health = 125;
+        Stamina = 125;
+        Hunger = 125;
+
+    }
+
+}public class EngineerClass : BaseClass
+{
+    public EngineerClass()
+    {
+        CharName = names[Random.Range(0, names.Length)]; generate random name
+        CharLevel = 1;
+        ClassName = Wyldwelder;
+        ClassDescription = Masters of invention, wyldwelders use ingenuity and magic to unlock extraordinary capabilities in objects.  +
+            They see magic as a complex system waiting to be decoded and then harnessed in their spells and inventions.  +
+            The Wyldwelder has a tool for every job and a solution to every problem. ;
+
+        Wisdom = 6;
+        Youth = 2;
+        Lithe = 4;
+        Design = 8;
+
+        Health = 75;
+        Stamina = 75;
+        Hunger = 75;
+
+    }
+
+}
