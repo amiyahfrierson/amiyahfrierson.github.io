@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import { HashRouter as Router } from 'react-router-dom';
 import SidebarNav from "./components/SidebarNav";
 import Intro from "./components/Intro";
 import Experience from "./components/Experience";
@@ -16,8 +17,8 @@ function App() {
   return (
       <div className="App">
           <div id="content">
+              <HashRouter basename={process.env.PUBLIC_URL}>
               <Switch>
-
               <Route exact path="/" render={() =>
         <React.Fragment>
         <Intro />
@@ -29,7 +30,8 @@ function App() {
                   } />
         <Route exact path="/WyldchildUI" exact component={Project1} />
         <Route exact path="/WyldchildPrototype" exact component={Project2} />
-        </Switch>
+              </Switch>
+              </HashRouter>
       </div>
         <SidebarNav />
 
