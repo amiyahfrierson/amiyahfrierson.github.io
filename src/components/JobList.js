@@ -84,7 +84,7 @@ const JobList = () => {
   const experienceItems = {
     "Louisiana Tech": {
       jobTitle: "Technical Coordinator @",
-      duration: "Sept 2019 - Mar 2020",
+      duration: "Oct 2019 - Mar 2020",
       desc: [
         "Developed spreadsheets and databases using Microsoft Excel for accumulating and organizing program data and presented findings to management.",
         "Corrected entry errors to prevent later issues such as duplication of data and data degradation.",
