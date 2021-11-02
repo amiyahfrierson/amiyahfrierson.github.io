@@ -1,0 +1,15 @@
+#credits {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  transition: all 500ms;
+}
+
+.ending-credits {
+    font-family: "NTR", sans-serif;
+    color: var(--slate);
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    transition: all 500ms;
+}

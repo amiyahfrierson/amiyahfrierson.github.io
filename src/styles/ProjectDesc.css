@@ -1,0 +1,168 @@
+
+#projectPage {
+    padding-left: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 25%;
+}
+
+#projectPage img {
+    height: auto; /* Make sure images are scaled correctly. */
+    width: 100%; /* Adhere to container width. */
+    display: block;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+@media (max-width: 1080px) {
+.projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+}
+
+.projects-card {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background: rgba(0,0,0,0.3);
+    position: relative;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 2rem 1.75rem;
+    border-radius: 16px;
+    transition: all 300ms;
+}
+
+.projects-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+.card-header {
+    margin-top: -20px;
+    display: flex;
+    padding: 1.25em 0 !important;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: none !important;
+}
+
+
+.folder-icon {
+    color: var(--aqua);
+}
+
+.github-icon {
+    margin-top: 6px;
+}
+
+    .github-icon:hover {
+        color: var(--aqua);
+    }
+
+.open-icon {
+    margin-left: 10px;
+    transform: scale(2);
+}
+
+#projectPage .card-title {
+    font-family: "NTR", sans-serif;
+    color: var(--lightest-slate);
+    font-size: 42px;
+    font-weight: bold;
+    transition: all 500ms;
+}
+
+.card-title:hover {
+    transform: translateX(2px);
+}
+
+
+#projectPage .card-desc {
+    font-family: "NTR", sans-serif;
+    color: var(--lightest-slate);
+    font-size: 22px;
+    padding-bottom: 40px;
+    padding: 15px;
+}
+
+.card-tech {
+    font-family: "NTR", sans-serif;
+    color: var(--lightest-slate);
+    font-size: 16px;
+}
+
+.go-back {
+    font-size: 22px;
+    font-family: "NTR", sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background: var(--aqua);
+    margin-top: 15px;
+    width: 200px;
+    transition: all 400ms;
+    text-align: center;
+}
+
+.go-back:hover {
+    box-shadow: 0 3px 7px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    transform: translateY(-3px) !important;
+}
+
+.go-back a {
+    color: #0f0f0f !important;
+}
+
+@media only screen and (max-width: 600px) {
+#projects {
+    height: unset;
+    padding-top: 30%;
+    padding-left: unset;
+    padding-right: unset;
+}
+}
+
+#projectPage .section-header{
+    font-size: 80px !important;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.big-link {
+    font-family: "NTR", sans-serif;
+    color: var(--lightest-slate);
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 500ms;
+    text-decoration: underline;
+}
+
+.big-link:hover {
+    transform: translateX(5px);
+    color: var(--aqua);
+}
+
+ul {
+    color: var(--lightest-slate);
+    font-family: "NTR", sans-serif;
+    list-style-type: circle;
+    margin: 0;
+    padding: 0;
+}
+
+
