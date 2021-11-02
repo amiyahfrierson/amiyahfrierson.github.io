@@ -1,6 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
-import { HashRouter as Router } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import SidebarNav from "./components/SidebarNav";
 import Intro from "./components/Intro";
 import Experience from "./components/Experience";
@@ -14,27 +13,26 @@ import "./styles/Global.css";
 import "rsuite/dist/styles/rsuite-default.css";
 
 function App() {
-  return (
+    return (
       <div className="App">
-          <div id="content">
-              <HashRouter basename={process.env.PUBLIC_URL}>
-              <Switch>
-              <Route exact path="/" render={() =>
-        <React.Fragment>
-        <Intro />
-        <About />
-        <Experience />
-        <Projects />
-        <Credits/>
-        </React.Fragment>
-                  } />
-        <Route exact path="/WyldchildUI" exact component={Project1} />
-        <Route exact path="/WyldchildPrototype" exact component={Project2} />
-              </Switch>
-              </HashRouter>
-      </div>
+        <div id="content">
+            <Router>
+                <Switch>
+                <Route exact path="/" render={() =>
+                <React.Fragment>
+                <Intro />
+                <Projects />
+                <About />
+                <Experience />
+                <Credits/>
+                </React.Fragment>
+                } />
+                <Route exact path="/WyldchildUI" exact component={Project1} />
+                <Route exact path="/WyldchildPrototype" exact component={Project2} />
+                </Switch>
+            </Router>
+        </div>
         <SidebarNav />
-
     </div>
   );
 }

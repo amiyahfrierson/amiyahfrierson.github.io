@@ -4,6 +4,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import icon from "./assets/favicon.ico";
 
 import "../styles/SidebarNav.css";
 import "react-typist/dist/Typist.css";
@@ -28,13 +29,6 @@ class SidebarNav extends React.Component {
   render() {
     const { expanded } = this.state;
 
-    const links = [
-      <a href="/">/home</a>,
-      <a href="/#about">/about</a>,
-      <a href="/#experience">/experience</a>,
-      <a href="/#projects">/projects</a>,
-    ];
-
     return (
       <div className="sidebar-nav">
         {!isMobile && (
@@ -46,13 +40,8 @@ class SidebarNav extends React.Component {
             appearance={"subtle"}
           >
             <Sidenav.Body>
-              <div className="sidebar-links">
-                {links.map((link, i) => (
-                  <FadeInSection delay={`${i + 1}00ms`}>
-                    <div>{link}</div>
-                  </FadeInSection>
-                ))}
-              </div>
+              <div className="sidebar-img"><a href="/"><img src={icon} alt="icon"/></a></div>
+
             </Sidenav.Body>
           </Sidenav>
         )}

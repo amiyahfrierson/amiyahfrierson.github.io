@@ -25,7 +25,7 @@ class Projects extends React.Component {
         desc:
           "A solo-developed roleplaying game made in Unity.",
             techStack: "Adobe XD, Adobe Photoshop",
-            link: "/WyldchildUI",
+            link: "/#/WyldchildUI",
 
       },
       "Wyldchild: Unity Prototype": {

@@ -51,6 +51,12 @@ img {
   height: 18px;
 }
 
+.sidebar-img img {
+    width: 55px;
+    height: 55px;
+    float: right;
+}
+
 @media only screen and (max-width: 600px) {
   .sidebar-nav {
     width: 100%;
