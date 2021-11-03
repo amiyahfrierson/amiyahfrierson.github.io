@@ -32,7 +32,7 @@ class Projects extends React.Component {
         desc:
           "Taking my game design document and UI mockups, I implented my concepts with functionality into Unity.",
           techStack: "Unity 2021, C#",
-          link: "/WyldchildPrototype",
+          link: "/#/WyldchildPrototype",
 
       },
       "Amiyah.dev": {
