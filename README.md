@@ -5,5 +5,3 @@
   The first iteration of <a href="https://amiyah.dev" target="_blank">amiyah.dev</a> built with React.js leveraging Material UI.
 </p>
 
-![Screenshot](https://imgur.com/BucmmJ5)
-
