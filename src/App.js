@@ -7,6 +7,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Project1 from "./components/Project1";
 import Project2 from "./components/Project2";
+import Project3 from "./components/Project3";
 import Credits from "./components/Credits";
 import "./App.css";
 import "./styles/Global.css";
@@ -29,6 +30,7 @@ function App() {
                 } />
                 <Route exact path="/WyldchildUI" exact component={Project1} />
                 <Route exact path="/WyldchildPrototype" exact component={Project2} />
+                <Route exact path="/LyrebornUI" exact component={Project3} />
                 </Switch>
             </Router>
         </div>

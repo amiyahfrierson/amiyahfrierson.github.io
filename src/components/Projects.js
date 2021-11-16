@@ -23,7 +23,7 @@ class Projects extends React.Component {
     const projects = {
       "Wyldchild: Game UI Mockup": {
         desc:
-          "A solo-developed roleplaying game made in Unity.",
+          "UI bible for a solo-developed roleplaying game made in Unity.",
             techStack: "Adobe XD, Adobe Photoshop",
             link: "/#/WyldchildUI",
 
@@ -33,6 +33,14 @@ class Projects extends React.Component {
           "Taking my game design document and UI mockups, I implented my concepts with functionality into Unity.",
           techStack: "Unity 2021, C#",
           link: "/#/WyldchildPrototype",
+
+      },
+
+      "Lyreborn: Game UI Mockup": {
+        desc:
+          "UI bible for a new metrovania-style game intended to be built with Unreal Engine.",
+          techStack: "Adobe XD, Adobe Photoshop",
+          link: "/#/LyrebornUI",
 
       },
       "Amiyah.dev": {
