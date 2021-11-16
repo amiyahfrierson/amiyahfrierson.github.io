@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "58f320f17e297d7681c059ad114983ad",
+    "revision": "36618ff47a851c07019dc6c8b11662d6",
     "url": "/index.html"
   },
   {
-    "revision": "06aad3184b7e5c2901b8",
+    "revision": "c2ec676a796e465e0e95",
     "url": "/static/css/2.1ec672bd.chunk.css"
   },
   {
-    "revision": "21ac6734b2b199bc8db0",
+    "revision": "6ad06f6ef92e54b22210",
     "url": "/static/css/main.91b91672.chunk.css"
   },
   {
-    "revision": "06aad3184b7e5c2901b8",
-    "url": "/static/js/2.e96419c5.chunk.js"
+    "revision": "c2ec676a796e465e0e95",
+    "url": "/static/js/2.b680ba71.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/static/js/2.e96419c5.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.b680ba71.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "21ac6734b2b199bc8db0",
-    "url": "/static/js/main.8d52c483.chunk.js"
+    "revision": "6ad06f6ef92e54b22210",
+    "url": "/static/js/main.4b126aa2.chunk.js"
   },
   {
     "revision": "2316a9466b04cfdb2428",
@@ -92,6 +92,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/inGame.921d4f4b.png"
   },
   {
+    "revision": "0e18dde53f1b7ae01b0cf8e95755efa5",
+    "url": "/static/media/inGame1.0e18dde5.png"
+  },
+  {
+    "revision": "8926181d03217f47e8e715c3451aed94",
+    "url": "/static/media/inGame2.8926181d.png"
+  },
+  {
+    "revision": "d32bc5a779403bd30993676af6ea8d95",
+    "url": "/static/media/inGame3.d32bc5a7.png"
+  },
+  {
+    "revision": "5d1819906bfbc0d49751a697612c703b",
+    "url": "/static/media/inspo.5d181990.png"
+  },
+  {
     "revision": "2c0fca4f3de9f704204cf82612ed6800",
     "url": "/static/media/inspoPage.2c0fca4f.png"
   },
@@ -118,6 +134,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6d96d5933394a2f331b6af5dd53c693f",
     "url": "/static/media/journey5.6d96d593.png"
+  },
+  {
+    "revision": "f25d6ceb4dc12f98d3b51dfbff46118f",
+    "url": "/static/media/locationFanfare.f25d6ceb.png"
+  },
+  {
+    "revision": "b70871456a0659eb5b0bfd6b2d8131f3",
+    "url": "/static/media/mainMenu.b7087145.png"
   },
   {
     "revision": "a5a9a7fc3644375a0d5ba9712965ed80",
@@ -152,12 +176,40 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/party3.64e34160.png"
   },
   {
+    "revision": "38115c1b787a21d966039bf71bca1253",
+    "url": "/static/media/pause1.38115c1b.png"
+  },
+  {
+    "revision": "7f2942ee3307e7d284189587b7f0b2c8",
+    "url": "/static/media/pause2.7f2942ee.png"
+  },
+  {
+    "revision": "ab01223b7bcd4a45cd264ba769a3be04",
+    "url": "/static/media/pause3.ab01223b.png"
+  },
+  {
+    "revision": "42b6c679705e1e8278ff205802906bd9",
+    "url": "/static/media/pause4.42b6c679.png"
+  },
+  {
     "revision": "430f9c8a02ef0e763e9f3ac10da12a4b",
     "url": "/static/media/paused.430f9c8a.png"
   },
   {
+    "revision": "f98357e3ff5dc6f5d1973dffabbbdf11",
+    "url": "/static/media/projectPreview.f98357e3.png"
+  },
+  {
     "revision": "c102638242eaad3e97be4921df3685b6",
     "url": "/static/media/startMenu.c1026382.png"
+  },
+  {
+    "revision": "aa71ad61d7fd1aa1c8427cd19b7a2da7",
+    "url": "/static/media/typo.aa71ad61.png"
+  },
+  {
+    "revision": "dd381c06d54ef8d14ae31404d06d37f0",
+    "url": "/static/media/upgrades.dd381c06.png"
   },
   {
     "revision": "90d910e55ce3c1c312315c993a8bd79c",
