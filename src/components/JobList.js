@@ -81,7 +81,26 @@ const JobList = () => {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
-  const experienceItems = {
+    const experienceItems = {
+
+    "PlayStation": {
+        jobTitle: "UX Design Intern (San Diego Studio) @",
+        duration: "May 2022 - Aug 2022",
+        desc: [
+            "Improved user flow and experience in the Diamond Dynasty section of annual title MLB: The Show.",
+            "Collaborated with personnel to create holistic UX vision and strategies.",
+            "Performed manual and iteractive testing on UX design elements and complete UX designs, authoring feedback reports for use in future updates.",
+            "Created 10 default logos to be used by the player base"
+        ]
+    },
+    "Society of Women Engineers": {
+        jobTitle: "Student Mentor @",
+        duration: "Oct 2021 - May 2022",
+        desc: [
+            "Counseled individual student in Python and C/C++, demonstrating industry coding conventions and proper syntax.",
+            "Created project development activities to improve tutorial skills and grow coding confidence and debugging skills."
+        ]
+      },
     "Louisiana Tech": {
       jobTitle: "Technical Coordinator @",
       duration: "Oct 2019 - Mar 2020",
@@ -89,14 +108,6 @@ const JobList = () => {
         "Developed spreadsheets and databases using Microsoft Excel for accumulating and organizing program data and presented findings to management.",
         "Corrected entry errors to prevent later issues such as duplication of data and data degradation.",
         "Maintained database updates and verified for correctness in a highly demanding environment."
-      ]
-    },
-    "Society of Women Engineers": {
-      jobTitle: "Student Mentor @",
-      duration: "Oct 2021 - Present",
-      desc: [
-        "Counseled individual student in Python and C/C++, demonstrating industry coding conventions and proper syntax.",
-        "Created project development activities to improve tutorial skills and grow coding confidence and debugging skills."
       ]
     },
   };

@@ -21,7 +21,6 @@ class About extends React.Component {
       <p>
         I am currently studying <b>Computer Science</b> at{" "}
         <b> Louisiana Tech University </b>, and concentrating in Graphics & Game Design.
-        I am currently a student mentor.
       </p>
     );
     const two = (
@@ -38,7 +37,7 @@ class About extends React.Component {
         <a href="mailto:amiyahfrierson@outlook.com">
           amiyahfrierson@outlook.com
         </a>{" "}
-        and let's talk.
+        and let's talk!
       </p>
     );
     const desc_items = [one, two];
