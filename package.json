@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "-": "0.0.1",
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^4.2.4",
@@ -20,6 +21,7 @@
     "react-transition-group": "^4.4.1",
     "react-typist": "^2.0.5",
     "rsuite": "^4.8.2",
+    "save-dev": "0.0.1-security",
     "schema-utils": "^3.0.0",
     "three": "^0.126.1"
   },
